@@ -53,7 +53,7 @@ ul{
 }
 .menu a:hover{
     background-color: #f4acb7
-    color: white
+    
 }
 ul ul{
     position: relative;
@@ -63,20 +63,22 @@ ul ul li{
     display: block;
     text-align: right;
 }
-.video, .sale{
+.sale{
     width: 80%;
     padding-left: 20%;
     padding-bottom: 5%;
     margin-bottom: 2%;
     margin-top: 3%;
+
 }
-.make{
+/*.make{
     width: 60%;
     padding-left: 2%;
     padding-bottom: 5%;
     margin-bottom: 0%;
     margin-left: 2%;
 }
+*/
 form{
     width: 50%;
     padding-left: 60%;
@@ -132,4 +134,69 @@ footer{
     height: 30%;
     margin-bottom: 5%;
     margin-left: 2%;
+}
+.gradiente{
+    background:
+    radial-gradient(
+      227.77% 227.77% at -8.45% -10.97%,
+      rgba(147, 248, 255, 1) 0%,
+      rgba(255, 200, 249, 0) 60%
+    ),
+    radial-gradient(
+      111.77% 111.77% at 107% 111%,
+      rgba(147, 248, 255, 1) 0%,
+      rgba(255, 200, 249, 0) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(255, 200, 249, 1) 0%,
+      rgba(255, 200, 249, 1) 100%
+    );
+}
+.video, .make{
+    box shadow: -webkit-box-shadow: 9px 9px 71px 15px rgba(0,0,0,0.25);
+-moz-box-shadow: 9px 9px 71px 15px rgba(0,0,0,0.25);
+box-shadow: 9px 9px 71px 15px rgba(0,0,0,0.25);
+}
+.content_blog{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    justify-items: start;
+    align-items: start ;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto ;
+    gap: 100px;
+    grid-template-areas: 
+    "make  texto1"
+    "titulob titulob"
+    "video video"
+    "texto2 texto2"
+    ;
+}
+.make{
+    grid-area: make;
+
+
+}
+.video{
+    grid-area: video;
+    width: 800px;
+    height: 600px;
+    margin-left: 20%;
+
+}
+.texto1{
+    grid-area: texto1;
+    justify-content: end;
+    font-size: 2rem;
+}
+.texto2{
+    grid-area: texto2;
+
+    font-size: 2.5rem;
+}
+.titulob{
+    grid-area: titulob;
+    
 }
