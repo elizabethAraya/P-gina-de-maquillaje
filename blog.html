@@ -10,30 +10,44 @@
     </head>
     <body>
         <header>
-            <nav>
-                <h2>
-                    Blog
-                </h2>
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 <img src="./Media/logo-hobe.png" alt="logo" width="160px">
-                <ul class="menu">
-                    <li><a href="hobe.html">Home</a></li>
-                    <li><a href="maquillaje.html">Maquillaje</a></li>
-                    <ul>
-                        <li>Nuestras Marcas</li>
-                        <li>Lo más vendido</li>
-                    </ul>
-                    <li><a href="sale.html">Sale</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-    
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="index.html">Ho.be</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="maquillaje.html">Maquillaje</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="sale.html">Sale</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
                 </ul>
-                </nav>
+                <form class="d-flex" role="Buscar">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </header>
 
         <main class="content_blog">
         <img class="make" src="./Media/young-woman-putting-on-makeup.jpg" alt="woman" width="500px">
         <p class="texto1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quisquam voluptatum veniam quos at doloremque unde, ad tempore sit, asperiores nostrum iste fugit quibusdam quae, adipisci repudiandae voluptates similique totam!
+           Más que maquillaje es la actitud. El maquillaje es solo un complemento a tu belleza y a tu personalidad, sé tu misma/o y demuestra toda tu creatividad.
         </p>
         
         <h1 class="titulob">
@@ -41,45 +55,45 @@
         </h1>
         <iframe class="video" src="https://www.youtube.com/embed/KTuEoPg2Dmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="texto2" >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti delectus quisquam quis beatae impedit eligendi soluta corporis provident dicta. Veritatis enim nihil magnam nemo. A eaque aut repudiandae voluptatibus quaerat?
+            Ve nuestros tutoriales para saber más sobre los productos, sus usos y recomendaciones. Nuestros expertos te brindarán consejos útiles para complementar a tu creatividad. 
         </p>
        </main>
              <br>
 
-       <div class="accordion" id="accordionExample">
+       <div class="accordion col-md-6"  id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Lorem ipsum dolor
+              Foundation o Base 
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>Una base del color correcto realzará tu maquillaje a otro nivel.</strong> Para elegir el color correcto de tu base o foundation es guiarse por el color de tu cuello, eso hará que el tono se vea del color correcto en tu piel. Recuerda siempre saber tu tipo de piel para elegir adecuadamente una base con la textura deseada.
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-             Lorem impsum dolor 2
+             Eyeshadow o Sombra de ojos
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>Colores que iluminan tu mirada.</strong> En las Sombras de ojos hay distintos tipos de sombras, como las shimmer, en crema, en polvo, líquidas, con efecto mate, etc. Dependiendo del efecto que desees en tu mirada puedes elegir alguna en particular y el color que más te agrade.
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Lorem ipsum dolor 3
+              Lipstick o Labial
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>Los maravillosos labiales.</strong> Tan variados en tonos, colores y efectos. Realzan nuestros labios y hacen que todas las miradas vayan a tus labios, definitivamente es el arma definitiva para robar miradas.
             </div>
           </div>
         </div>
@@ -90,8 +104,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
     <footer>
-        <img src="./Media/facebook.png" alt="facebook" width="30px"> 
-        <img src="./Media/instagram.png" alt="instagram" width="30px"> 
-        <img src="./Media/whatsapp.png" alt="whatsapp" width="30px">
+      <a href="https://es-la.facebook.com"> <img class="logo1" src="./Media/facebook.png" alt="facebook_de_hobe"> </a>
+      <a href="https://www.instagram.com"> <img class="logo2" src="./Media/instagram.png" alt="instagram_de_hobe"></a>
+      <a href="https://web.whatsapp.com"> <img class="logo3" src="./Media/whatsapp.png" alt="whatsapp_de_hobe"> </a>
     </footer>
     </html>
